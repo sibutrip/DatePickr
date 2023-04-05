@@ -30,16 +30,16 @@ public struct DatePicker: View {
     public var body: some View {
         ZStack {
             VStack {
-                Image("tree")
+                Image("tree", bundle: Bundle.module)
                     .resizable()
                     .scaledToFit()
-                Image("basket")
+                Image("basket", bundle: Bundle.module)
                     .resizable()
                     .scaledToFit()
             }
             ZStack {
                 ForEach(0..<dates.count, id: \.self) { index in
-                    Image("fruit")
+                    Image("fruit", bundle: Bundle.module)
                         .resizable()
                         .frame(width: 50, height: 50)
                         .offset(x: dates[index].offsets.0, y: dates[index].offsets.1)
