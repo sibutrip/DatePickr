@@ -19,7 +19,7 @@ public struct DateFruit: Identifiable {
 @available(iOS 15.0, *)
 public struct DatePicker: View {
     
-    init(minimumCapacity: Int) {
+    public init(minimumCapacity: Int) {
         dates = (0..<minimumCapacity).map {_ in
             .init()
         }
